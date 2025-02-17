@@ -1,0 +1,42 @@
+backcall==0.2.0
+boto3==1.36.21
+botocore==1.36.21  # Matching boto3 compatibility
+# certifi==2025.1.31
+certifi>=2023.7.22
+chardet==5.2.0
+colorama==0.4.6
+decorator==5.1.1
+docutils==0.21.2
+idna==3.10
+imageio==2.37.0
+ipykernel==6.29.5
+ipython==8.32.0
+ipython-genutils==0.2.0
+jedi==0.19.2
+jmespath==1.0.1
+jupyter-client==8.6.3
+jupyter-core==5.7.2
+moviepy==2.1.2
+numpy==1.26.4  # Ensuring compatibility with dependencies
+parso==0.8.4
+pickleshare==0.7.5
+Pillow==10.0.1
+proglog==0.1.10  # Required by moviepy
+prompt-toolkit==3.0.50
+Pygments==2.19.1
+python-dateutil==2.9.0.post0
+pytube==15.0.0
+pyzmq==25.1.1
+requests==2.32.3
+s3transfer==0.11.2
+simplegeneric==0.8.1
+six==1.17.0
+tornado==6.4.2
+tqdm==4.67.1
+traitlets==5.14.3
+urllib3==2.3.0
+wcwidth==0.2.5
+wincertstore==0.2
+
+# Added explicit dependencies for pytube fix
+
