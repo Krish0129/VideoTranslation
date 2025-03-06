@@ -152,7 +152,7 @@ def lambda_handler(event, context):
     srt_file_name = str(fileobj['s3']['object']['key'])
     output_file_path = '/tmp/'+srt_file_name
     print ("Filename ",srt_file_name)
-    bucket_name = "video-translation-output-translated-srt" 
+    bucket_name = "video-translation-ot-translated-srt" 
     s3.download_file(bucket_name,srt_file_name, output_file_path)
 
     base_filename_json = srt_file_name.rsplit('.',1)[0]
@@ -181,7 +181,7 @@ def lambda_handler(event, context):
     print ("Saved original audio")
 
     print ("Uploading to S3")
-    final_audio_bucket = "video-translation-final-audio-output"
+    final_audio_bucket = "final-audio-output-vt"
     s3.upload_file(final_audio_path, final_audio_bucket, os.path.basename(final_audio_path))
     print ("Finished Uploading to S3")
 
